@@ -23,30 +23,45 @@ from urllib.parse import quote
 #     yuchiwon_list.append([start_point_longitude, start_point_latitude])
 
 # t-map api 이용해서 학습
-appkey = input('T맵 appkey를 입력하시오')
+appkey = input('T맵 appkey를 입력하시오 ')
 t_map_url = f'https://apis.openapi.sk.com/tmap/routes/pedestrian?version=1&appKey={appkey}'
 
-startX = float(input())
-startY = float(input())
-endX = float(input())
-endY = float(input())
-startName = input()
+# t-map을 이용하여 최적의 경로의 총시간과 총 거리 구하기
+def find_road_list(start_x, start_y, end_x, end_y, start_name, end_name):
+    extra_element = f'&startX={start_x}&startY={start_y}&endX={end_x}&endY={end_y}&reqCoordType=WGS84GEO&startName={start_name}&endName={end_name}&resCoordType=WGS84GEO'
+    url = t_map_url + extra_element
+    req = Request(url)
+    response = urlopen(req)
+    res = response.getcode()
+    if res == 204:
+        print("No Content")
+        return None
+    elif res == 400:
+        print("Bad Request")
+        return None
+    elif res == 500:
+        print("Internal Server Error")
+        return None
+    else:
+        body = response.read().decode('utf-8')
+        json_dict = json.loads(body)
+        return [json_dict['features'][0]['properties']['totalDistance'], json_dict['features'][0]['properties']['totalTime']]
+input_list = [x for x in input("데이터 입력해주세요").split()]
+startX = input_list[0]
+startX = float(startX)
+startY = input_list[1]
+startY = float(startY)
+endX = input_list[2]
+endX = float(endX)
+endY = input_list[3]
+endY = float(endY)
+startName = input("시작 주소를 입력해주세요 ")
 startName = quote(startName)
-endName = input()
+endName = input("끝 주소를 입력해주세요 ")
 endName = quote(endName)
-extra_element = f'&startX={startX}&startY={startY}&endX={endX}&endY={endY}&reqCoordType=WGS84GEO&startName={startName}&endName={endName}&resCoordType=WGS84GEO'
-url = t_map_url + extra_element
-req = Request(url)
-response = urlopen(req)
-res = response.getcode()
-if res == 204:
-    print("No Content")
-elif res == 400:
-    print("Bad Request")
-elif res == 500:
-    print("Internal Server Error")
-else:
-    body = response.read().decode('utf-8')
-    print(json.loads(body))
+print(find_road_list(startX, startY, endX, endY, startName, endName))
+
+
+
 
 
