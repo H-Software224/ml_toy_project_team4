@@ -9,7 +9,7 @@
 - <b> 한 줄 소개 : 탕후루 가게의 입점 조건 학습을 통한 새로운 입점 장소 예측하기
 - <b> Project Period: 2023.08.30 ~ 2023.09.06 (8 Days)
   
-[발표 자료 PDF 보러가기](https://github.com/mini-min/ml_toy_project_team4/blob/feature/%232/%ED%83%95%ED%9B%84%EB%A3%A8%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20ppt%20%EC%B5%9C%EC%B5%9C%EC%B5%9C%EC%A2%85.pdf)
+[발표 자료 PDF 보러가기](https://github.com/khuda-4th/ml_toy_project_team4/blob/main/%ED%83%95%ED%9B%84%EB%A3%A8%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20ppt%20%EC%B5%9C%EC%B5%9C%EC%B5%9C%EC%A2%85.pdf)
 
 <br>
 
@@ -17,16 +17,16 @@
 
 | File Name | Description |
 | ------ | -------- |
-| [📦 crawling](https://github.com/mini-min/ml_toy_project_team4/tree/feature/%232/crawling) | 데이터 저장용, 크롤링할 때 사용한 코드입니다. |
-| [📦 data_collection](https://github.com/mini-min/ml_toy_project_team4/tree/feature/%232/data_collection) | 프로젝트 input, target 데이터로 활용한 파일들을 모아두었습니다. |
-| [Visualize.ipynb](https://github.com/mini-min/ml_toy_project_team4/blob/feature/%232/Visualize.ipynb) | 최종 탕후루 예측치를 시각화하는 코드입니다. |
-| [data_filter_weight.ipynb](https://github.com/mini-min/ml_toy_project_team4/blob/feature/%232/data_filter_weight.ipynb) | input 데이터들을 weight값으로 변환해 df로 저장하는 코드입니다. |
-| [find_road.py](https://github.com/mini-min/ml_toy_project_team4/blob/feature/%232/find_road.py) | 직선 거리 대신, 길 찾기 거리를 계산하기 위한 코드입니다. 이번 프로젝트에서는 활용하지 못한 부분입니다. |
-| [grid_final.ipynb](https://github.com/mini-min/ml_toy_project_team4/blob/feature/%232/grid_final.ipynb) | 서울을 grid 범위에 따라 h3 형태로 나누고, 데이터 프레임으로 값을 반환시켜주는 코드입니다. |
-| [ml_regression.ipynb](https://github.com/mini-min/ml_toy_project_team4/blob/feature/%232/ml_regression.ipynb) | Linear Regression Modelling 코드입니다. |
-| [📦 res_coordinates](https://github.com/mini-min/ml_toy_project_team4/blob/feature/%232/res_coordinates.zip) | grid resolution 값에 따른 좌표값 데이터들을 모아둔 파일입니다. |
-| [📦 res_dist_weight_data](https://github.com/mini-min/ml_toy_project_team4/blob/feature/%232/res_dist_weight_data.zip) | res와 dist 값에 따라 weight 값을 적용한 df 데이터들을 모아둔 파일입니다. |
-| [tanghulu_data_code](https://github.com/mini-min/ml_toy_project_team4/blob/feature/%232/tanghulu_data_code.ipynb) | res_dist_weight_data를 만들기 위한 코드입니다. |
+| [📦 crawling](https://github.com/khuda-4th/ml_toy_project_team4/tree/main/crawling) | 데이터 저장용, 크롤링할 때 사용한 코드입니다. |
+| [📦 data_collection](https://github.com/khuda-4th/ml_toy_project_team4/tree/main/data_collection) | 프로젝트 input, target 데이터로 활용한 파일들을 모아두었습니다. |
+| [Visualize.ipynb](https://github.com/khuda-4th/ml_toy_project_team4/blob/main/Visualize.ipynb) | 최종 탕후루 예측치를 시각화하는 코드입니다. |
+| [data_filter_weight.ipynb](https://github.com/khuda-4th/ml_toy_project_team4/blob/main/data_filter_weight.ipynb) | input 데이터들을 weight값으로 변환해 df로 저장하는 코드입니다. |
+| [find_road.py](https://github.com/khuda-4th/ml_toy_project_team4/blob/main/find_road.py) | 직선 거리 대신, 길 찾기 거리를 계산하기 위한 코드입니다. 이번 프로젝트에서는 활용하지 못한 부분입니다. |
+| [grid_final.ipynb](https://github.com/khuda-4th/ml_toy_project_team4/blob/main/grid_final.ipynb) | 서울을 grid 범위에 따라 h3 형태로 나누고, 데이터 프레임으로 값을 반환시켜주는 코드입니다. |
+| [ml_regression.ipynb](https://github.com/khuda-4th/ml_toy_project_team4/blob/main/ml_regression.ipynb) | Linear Regression Modelling 코드입니다. |
+| [📦 res_coordinates](https://github.com/khuda-4th/ml_toy_project_team4/blob/main/res_coordinates.zip) | grid resolution 값에 따른 좌표값 데이터들을 모아둔 파일입니다. |
+| [📦 res_dist_weight_data](https://github.com/khuda-4th/ml_toy_project_team4/blob/main/res_dist_weight_data.zip) | res와 dist 값에 따라 weight 값을 적용한 df 데이터들을 모아둔 파일입니다. |
+| [tanghulu_data_code](https://github.com/khuda-4th/ml_toy_project_team4/blob/main/tanghulu_data_code.ipynb) | res_dist_weight_data를 만들기 위한 코드입니다. |
 
 <br>
 
